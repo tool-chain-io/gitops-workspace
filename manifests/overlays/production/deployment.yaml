@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whatos
+  namespace: whatos
+spec:
+  template:
+    spec:
+      serviceAccountName: whatos-prod-sa-identity 
+      containers:
+        - name: whatos
+          image: whatos

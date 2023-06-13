@@ -1,0 +1,7 @@
+resources:
+- serviceaccount.yaml
+- ../../base
+patchesStrategicMerge:
+- deployment.yaml
+- service.yaml
+- ingress.yaml
